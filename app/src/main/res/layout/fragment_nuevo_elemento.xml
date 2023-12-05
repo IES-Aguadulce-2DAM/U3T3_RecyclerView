@@ -8,17 +8,17 @@
               tools:context=".NuevoElementoFragment">
 
     <EditText
-            android:id="@+id/nombre"
+            android:id="@+id/tv_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre"/>
     <EditText
-            android:id="@+id/descripcion"
+            android:id="@+id/et_descripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Descripcion"/>
     <Button
-            android:id="@+id/crear"
+            android:id="@+id/btn_crear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CREAR"/>
