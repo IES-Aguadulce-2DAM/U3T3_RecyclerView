@@ -14,6 +14,8 @@ public class ElementosViewModel extends AndroidViewModel {
 
     MutableLiveData<List<Elemento>> listElementosMutableLiveData = new MutableLiveData<>();
 
+    MutableLiveData<Elemento> elementoSeleccionado = new MutableLiveData<>();
+
     public ElementosViewModel(@NonNull Application application) {
         super(application);
 
@@ -51,5 +53,13 @@ public class ElementosViewModel extends AndroidViewModel {
                 listElementosMutableLiveData.setValue(elementos);
             }
         });
+    }
+
+    MutableLiveData<Elemento> getSeleccionado(){
+        return elementoSeleccionado;
+    }
+
+    void setSeleccionado(Elemento elemento){
+        elementoSeleccionado.setValue(elemento);
     }
 }
